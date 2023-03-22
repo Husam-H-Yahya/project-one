@@ -16,7 +16,7 @@ Route::get('about', function () {
 Route::post('about', function () {
     $name = 'Husam';
     if(isset($_POST['name']))
-        $name = $_POST['name'];
+    $name = $_POST['name'];
     return view('about',compact('name'));
 });
 
